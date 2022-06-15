@@ -5,3 +5,15 @@ export interface Hamburguesa {
   img: string;
   ingredientes?: string[];
 }
+
+export interface Producto {
+  idProducto: number;
+  nombre: string;
+  precio: number;
+  img: string;
+  descripcion?: string;
+}
+
+export interface Carrito {
+  productos: Producto[];
+}
